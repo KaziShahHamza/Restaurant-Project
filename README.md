@@ -1,6 +1,11 @@
 # Restaurant Project 🍽️
 
-This is my university course project for creating a modern restaurant landing page website. The project is built using:
+This is Our university course project for creating a modern restaurant landing page website. The project is built using:
+
+We:
+Aisha Azad Aspiya (221071016)
+Kazi Shah Hamza (221071049)
+Shihab Sarker (202071004)
 
 - **React** ⚛️ for building the UI components
 - **Tailwind CSS** 🎨 for styling
