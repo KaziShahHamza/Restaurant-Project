@@ -1,13 +1,12 @@
-import React from "react";
 import HeroSection from "./components/HeroSection";
-import NewPage from "./components/NewPage";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   return (
-    <>
-      <HeroSection />
-      <NewPage />
-    </>
+    <main className="overflow-y-hidden text-neutral-200 antialiased">
+      <HeroSection /> 
+      <NavBar />
+    </main>
   );
 };
 
