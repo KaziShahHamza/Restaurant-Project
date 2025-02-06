@@ -2,6 +2,8 @@ import HeroSection from "./components/HeroSection";
 import NavBar from "./components/NavBar";
 import Dishes from "./components/Dishes";
 import About from "./components/About";
+import Mission from "./components/Mission";
+import Expertise from "./components/Expertise";
 
 const App = () => {
   return (
@@ -10,6 +12,8 @@ const App = () => {
       <NavBar />
       <Dishes />
       <About />
+      <Mission />
+      <Expertise />
     </main>
   );
 };
