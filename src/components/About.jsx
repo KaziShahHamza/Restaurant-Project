@@ -4,7 +4,7 @@ import { ABOUT } from "../constants";
 const About = () => {
 
   return (
-    <section className="container mx-auto mb-8" id="about">
+    <section className="container mx-auto mt-8 mb-8" id="about">
       <h2 className="mb-8 text-center text-3xl tracking-tighter">About Us</h2>
       <div className="flex flex-wrap">
         <div className="w-full p-4 lg:w-1/2">

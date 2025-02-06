@@ -8,8 +8,9 @@ import customer4 from "../assets/customer4.jpeg";
 const Review = () => {
   return (
     <section className="container mx-auto mb-8 mt-12">
+      <h2 className="text-3xl lg:text-4xl text-center">Our Reviews</h2>
       <div className="flex flex-col">
-        <p className="mb-10 text-3xl font-light leading-normal tracking-tighter lg:mx-40 lg:mt-40 lg:text-5xl"> 
+        <p className="mb-10 text-3xl font-light leading-normal tracking-tighter lg:mx-40 lg:mt-20 lg:text-5xl"> 
           {REVIEW.content}
         </p>
         <div className="flex items-center justify-center gap-6">

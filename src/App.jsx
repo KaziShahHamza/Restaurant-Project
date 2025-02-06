@@ -1,27 +1,16 @@
-import HeroSection from "./components/HeroSection";
-import NavBar from "./components/NavBar";
-import Dishes from "./components/Dishes";
-import About from "./components/About";
-import Mission from "./components/Mission";
-import Expertise from "./components/Expertise";
-import Review from "./components/Review";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import { Outlet } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
-const App = () => {
+function App() {
   return (
-    <main className="overflow-y-hidden text-neutral-200 antialiased">
-      <HeroSection /> 
+    <div>
       <NavBar />
-      <Dishes />
-      <About />
-      <Mission />
-      <Expertise />
-      <Review />
-      <Contact />
+      {/* <div className='py-10'></div> */}
+      <Outlet />
       <Footer />
-    </main>
+    </div>
   );
-};
+}
 
 export default App;

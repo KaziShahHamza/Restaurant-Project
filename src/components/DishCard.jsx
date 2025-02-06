@@ -4,6 +4,8 @@ const DishCard = ({ project }) => {
       <img
         src={project.image}
         alt={project.title}
+        height={300}
+        width={300}
         className="rounded-3xl p-2"
       />
 

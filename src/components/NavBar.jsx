@@ -1,8 +1,10 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
+import navbar from "../assets/navbar.jpg";
 import { LINKS } from "../constants";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,21 +28,25 @@ const NavBar = () => {
     setIsOpen(false);
   };
   return (
-    <nav className="fixed top-4 z-50 flex w-full flex-col items-center justify-center">
-      <div className="flex w-full items-center justify-between overflow-y-hidden p-4 backdrop-blur-lg lg:m-2 lg:w-[50rem] lg:rounded-full lg:shadow-lg">
-        <img src={logo} alt="logo" height={22} width={80} />
+    <nav className="bg-gray-300/10 top-2 z-50 flex w-full flex-col items-center justify-center" >
+      <div
+        className="flex w-full items-center justify-between overflow-y-hidden p-3 backdrop-blur-lg lg:m-2 lg:w-[50rem] lg:rounded-full lg:shadow-lg "
+      >
+        <Link to="/">
+          <img src={logo} alt="logo" height={22} width={80} />
+        </Link>
         <div className="hidden space-x-6 lg:flex">
           {LINKS.map((link, index) => (
-            <a
+            <Link
               key={index}
-              href={`#${link.targetId}`}
-              onClick={(e) => handleScroll(e, link.targetId)}
-              className={`text-sm hover:opacity-50 ${
+              to={`${link.targetId}`}
+              // onClick={(e) => handleScroll(e, link.targetId)}
+              className={`text-base hover:opacity-50 ${
                 index !== 0 ? "border-l-2 border-neutral-300/20 pl-2" : ""
               }`}
             >
               {link.text}
-            </a>
+            </Link>
           ))}
         </div>
         <div className="lg:hidden ">
@@ -50,14 +56,14 @@ const NavBar = () => {
       {isOpen && (
         <div className="w-full backdrop-blur-lg lg:hidden">
           {LINKS.map((link, index) => (
-            <a
+            <Link
               key={index}
-              href={`#${link.targetId}`}
-              onClick={(e) => handleScroll(e, link.targetId)}
-              className="block p-4 uppercase tracking-tighter"
+              to={`${link.targetId}`}
+              // onClick={(e) => handleScroll(e, link.targetId)}
+              className="block p-4 uppercase tracking-tighter text-base"
             >
               {link.text}
-            </a> 
+            </Link> 
           ))}
         </div>
       )}
