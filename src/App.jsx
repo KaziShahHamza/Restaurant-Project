@@ -6,7 +6,6 @@ function App() {
   return (
     <div>
       <NavBar />
-      {/* <div className='py-10'></div> */}
       <Outlet />
       <Footer />
     </div>

@@ -1,18 +1,3 @@
-import dish1 from "../assets/dish1.jpeg";
-import dish2 from "../assets/dish2.jpeg";
-import dish3 from "../assets/dish3.jpeg";
-import dish4 from "../assets/dish4.jpeg";
-import dish5 from "../assets/dish5.jpeg";
-import dish6 from "../assets/dish6.jpeg";
-import dish7 from "../assets/dish7.jpeg";
-import dish8 from "../assets/dish8.jpeg";
-import dish9 from "../assets/dish9.jpeg";
-import dish10 from "../assets/dish10.jpeg";
-
-import italian from "../assets/italian.jpeg";
-import japanese from "../assets/japanese.jpeg";
-import indian from "../assets/indian.jpeg";
-
 import { FaXTwitter, FaFacebook, FaInstagram } from "react-icons/fa6";
 
 export const LINKS = [
@@ -88,33 +73,51 @@ export const MISSION =
 export const CUSINES = [
   {
     number: "01.",
-    image: japanese,
+    image: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2023/2/23/FNK_Indian-Fried-Chicken_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1677264108617.webp",
     title: "Fried Chicken",
     description:
       "Crispy, golden, and packed with flavor – our signature fried chicken is a must-try.",
   },
   {
     number: "02.",
-    image: italian,
+    image: "https://www.tasteandtellblog.com/wp-content/uploads/2020/06/Grilled-Chicken-Seasoning-1.jpg",
     title: "Grilled Specials",
     description:
       "For those who love smoky flavors, our grilled chicken options are a treat.",
   },
   {
     number: "03.",
-    image: indian,
+    image: "https://static.vecteezy.com/system/resources/previews/047/326/673/non_2x/classic-american-fast-food-feast-photo.jpg",
     title: "Fast Food Classics",
     description:
       "From crispy fries to creamy coleslaw, we serve all your fast-food favorites.",
   },
 ];
 
-export const REVIEW = {
-  name: "Tanveer Ahmed",
-  profession: "Food Enthusiast",
-  content:
-    "“I’ve tried many fried chicken spots, but this place is something special! The crispy chicken is perfect, the Zinger Burger is packed with spice, and the peri peri wings are a game-changer. Highly recommended for all fast-food lovers!”",
-};
+export const REVIEW = [
+  {
+    name: "Tanver Ahmed",
+    profession: "Food Vlogger",
+    image: "https://cdn.pixabay.com/photo/2018/06/07/07/04/indian-3459541_1280.jpg",
+    content:
+      "“I’ve tried many fried chicken spots, but this place is something special! The crispy chicken is perfect. Highly recommended for all fast-food lovers!”",
+  },
+  {
+    name: "Rafiq Hasan",
+    profession: "Chef & Food Critic",
+    image: "https://assets.telegraphindia.com/telegraph/2022/Jul/1657704683_171166226_304882980995507_7328297627821882232_n.jpg",
+    content:
+      "“The flavors here are outstanding! The grilled chicken has a perfect smoky taste, and the sauces add just the right amount of kick. Definitely a must-visit for foodies!”",
+  },
+  {
+    name: "Sara Islam",
+    profession: "Travel & Food Blogger",
+    image: "https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2021-10/211005-Pooja-Shah-ew-451p-7a7295.jpg",
+    content:
+      "“I love how fresh and juicy the chicken is! The fries are crispy, and the peri peri wings have an amazing spice blend. A fantastic spot for a quick and tasty meal!”",
+  },
+];
+
 
 export const CONTACT = [
   { key: "address", value: "Address: 55 Gulshan Avenue, Dhaka, Bangladesh" },

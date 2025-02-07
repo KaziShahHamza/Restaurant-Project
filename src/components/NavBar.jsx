@@ -28,7 +28,10 @@ const NavBar = () => {
     setIsOpen(false);
   };
   return (
-    <nav className="bg-gray-300/10 top-2 z-50 flex w-full flex-col items-center justify-center" >
+    <nav
+      className="bg-gray-300/10 top-2 z-50 flex w-full flex-col items-center justify-center"
+      style={{ backgroundImage: `url(${navbar})` }}
+    >
       <div
         className="flex w-full items-center justify-between overflow-y-hidden p-3 backdrop-blur-lg lg:m-2 lg:w-[50rem] lg:rounded-full lg:shadow-lg "
       >
